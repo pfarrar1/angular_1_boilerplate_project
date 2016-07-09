@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html id="ng-app" data-ng-app="boilerplate" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <title>shouldIEatSample sample</title>
+    <link href="../app/dist/styles/vendor-styles.min.css" rel="stylesheet">
+    <link href="../app/dist/styles/style.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="../app/dist/js/vendor/ie8.min.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+      <script>
+        document.createElement('ng-include');
+        document.createElement('ng-pluralize');
+        document.createElement('ng-view');
+        document.createElement('carousel');
+        document.createElement('slide');
+        document.createElement('accordion');
+        document.createElement('accordion-group');
+        document.createElement('console');
+        document.createElement('tabset');
+        document.createElement('tab');
+        document.createElement('tab-heading');
+
+        // Optionally these for CSS
+        document.createElement('ng:include');
+        document.createElement('ng:pluralize');
+        document.createElement('ng:view');
+        document.createElement('ng:carousel');
+        document.createElement('ng:slide');
+      </script>
+    <![endif]-->
+</head>
+
+<body>
+    <toast></toast>
+    <div id="wrap">
+        <div id="navigation-container" data-ng-include="'app/views/layout/_navigation.html'"></div>
+        <div id="main" class="container-fluid clear-top">
+            <div data-ng-view></div>
+        </div>
+    </div>
+    <!-- Debugging Details -->
+    <!-- Minified Versions -->
+    <!-- Vendor JS LIBS -->
+    <script src="../app/dist/js/vendor/all.min.js"></script>
+    <!-- Core Application Specific JS LIBS -->
+    <script src="../app/dist/js/core/all.min.js"></script>
+</body>
+
+</html>
