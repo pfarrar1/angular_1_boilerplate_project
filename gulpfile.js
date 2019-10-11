@@ -111,7 +111,7 @@ gulp.task('ie8-scripts', function() {
 });
 
 // Watch Files For Changes
-gulp.task('watch', function() {
+gulp.task('watch', gulp.parallel(function() {
   gulp.watch([
     './app.js',
     './app/*.js',
@@ -128,7 +128,7 @@ gulp.task('watch', function() {
     './app/stylesheets/partials/*.scss',
     './app/stylesheets/vendor/*.scss',
   ], ['sass']);
-});
+}));
 
 
 gulp.task('icons', function() { 
@@ -137,9 +137,9 @@ gulp.task('icons', function() { 
 });
 
 
-//
-// gulp.task('compile-js', ['vendor-scripts', 'scripts', 'ie8-scripts', 'icons']);
-//
+
+gulp.task('compile-js', gulp.parallel(['vendor-scripts', 'scripts', 'ie8-scripts', 'icons']));
+
 
 
 

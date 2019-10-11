@@ -7,6 +7,9 @@
                     .when('/', {
                         templateUrl: 'app/views/home/_dashboard.html',
                     })
+                    .when('/new', {
+                        templateUrl: 'app/views/home/_new.html',
+                    })
                     .otherwise({
                         redirectTo: '/'
                     });
@@ -100,14 +103,13 @@
                 var deferred = $q.defer();
                 var url = "https://data.cityofchicago.org/resource/cwig-ma7x.json";
 
-                $http.get(url).
-                success(function(data, status, headers, config) {
-                    deferred.resolve(data);
-                }).
-                error(function(data, status, headers, config) {
-                    deferred.reject(status);
-                });
-
+                $http.get(url).then(
+                    function(data, status, headers, config) {
+                        deferred.resolve(data);
+                    },
+                    function(data, status, headers, config) {
+                        deferred.reject(status);
+                    })
                 return deferred.promise;
             }
 
