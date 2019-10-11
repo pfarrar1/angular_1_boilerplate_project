@@ -10,11 +10,11 @@ This project is an AngularJS starter application that I put together of common s
 
 #### What vendor libraries are in the project
 
-* "angular": "^1.5.6", (possibility to be migrated to Angular 1.7.0 in the future);
-* "angular-animate": "^1.5.6",
-* "angular-route": "^1.5.6",
-* "angular-resource": "^1.5.6",
-* "angular-sanitize": "^1.5.6",
+* "angular": "1.7.8", (possibility to be migrated to Angular 1.7.0 in the future);
+* "angular-animate": "1.7.8",
+* "angular-route": ^17.86",
+* "angular-resource": "1.7.8",
+* "angular-sanitize": "1.7.8",
 * "angular-bootstrap": "^1.3.3",
 * "font-awesome": "^4.6.3",
 * "bootstrap": "^3.3.6", (possibility to be migrated to Bootstrap 4 in the future);
