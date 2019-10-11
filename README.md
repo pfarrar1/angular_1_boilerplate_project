@@ -53,7 +53,7 @@ Navigate to http://localhost:8080/ in your web browser.
 
 This project uses `gulp` as the build manager to build minified versions of the JS, compile the SASS to production ready code. Compiled assests will be added to the `../angular_1_boilerplate_projecct/app/dist/` directory. Running `gulp` will also trigger the `gulp watch` which will watch the application js files and SASS files for changes and automatically trigger rebuild/compile.
 
-Runnning `gulp` will run the following task 
+Runnning `gulp` will run the following task - *NEEDS TO BE UPDATED FOR GULP 4*
 
 > `gulp.task('default', ['scripts', 'vendor-scripts', 'ie8-scripts', 'vendor-styles', 'sass', 'watch', 'icons']);`
 
