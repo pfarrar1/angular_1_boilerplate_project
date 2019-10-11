@@ -10,9 +10,9 @@ This project is an AngularJS starter application that I put together of common s
 
 #### What vendor libraries are in the project
 
-* "angular": "1.7.8", (possibility to be migrated to Angular 1.7.0 in the future);
+* "angular": "1.7.8";
 * "angular-animate": "1.7.8",
-* "angular-route": ^17.86",
+* "angular-route": "1.7.8",
 * "angular-resource": "1.7.8",
 * "angular-sanitize": "1.7.8",
 * "angular-bootstrap": "^1.3.3",
@@ -45,7 +45,7 @@ Run `bower install` to install bower packages.
 If bower is not installed, run `npm install -g bower`, then run `bower install.
 
 To start app cd to app home directory. 
-Run `node server.js` 
+Run `node server.js`
 
 Navigate to http://localhost:8080/ in your web browser.
 
@@ -64,3 +64,11 @@ Runnning `gulp` will run the following task
 
 ##
 This projects uses open source projects, libraries, and frameworks. Please refer to their specific documentation for use cases. 
+
+## Issues
+> If you run into the error `Error: Cannot find module 'connect'`, run `npm i connect` or install globally `npm i connect -g`. 
+
+> If you run into the error `Error: Cannot find module 'serve-static'`, run `npm i serve-static` or install globally `npm i serve-static -g`
+
+However, installing globally may cause issues with other packages. 
+
