@@ -7,6 +7,9 @@
                     .when('/', {
                         templateUrl: 'app/views/home/_dashboard.html',
                     })
+                    .when('/new', {
+                        templateUrl: 'app/views/home/_new.html',
+                    })
                     .otherwise({
                         redirectTo: '/'
                     });

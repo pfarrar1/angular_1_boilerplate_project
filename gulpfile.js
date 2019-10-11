@@ -37,6 +37,7 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./app/dist/styles/'));
 });
 
+
 gulp.task('vendor-styles', function() {
   return gulp.src([
       './bower_components/font-awesome/css/font-awesome.css',
@@ -110,7 +111,7 @@ gulp.task('ie8-scripts', function() {
 });
 
 // Watch Files For Changes
-gulp.task('watch', function() {
+gulp.task('watch', gulp.parallel(function() {
   gulp.watch([
     './app.js',
     './app/*.js',
@@ -127,13 +128,24 @@ gulp.task('watch', function() {
     './app/stylesheets/partials/*.scss',
     './app/stylesheets/vendor/*.scss',
   ], ['sass']);
-});
+}));
+
 
 gulp.task('icons', function() { 
     return gulp.src('./bower_components/font-awesome/fonts/**.*') 
         .pipe(gulp.dest('./app/dist/fonts/')); 
 });
 
-gulp.task('compile-js', ['vendor-scripts', 'scripts', 'ie8-scripts', 'icons']);
 
-gulp.task('default', ['scripts', 'vendor-scripts', 'ie8-scripts', 'vendor-styles', 'sass', 'watch', 'icons']);
+
+gulp.task('compile-js', gulp.parallel(['vendor-scripts', 'scripts', 'ie8-scripts', 'icons']));
+
+
+
+
+gulp.task('default', gulp.parallel(['scripts', 'vendor-scripts', 'ie8-scripts', 'vendor-styles', 'sass', 'icons']));
+
+
+// gulp.task('default', gulp.series(['scripts', 'vendor-scripts', 'ie8-scripts', 'vendor-styles', 'sass', 'watch', 'icons'], function() {
+//     // default task code here
+// }));
