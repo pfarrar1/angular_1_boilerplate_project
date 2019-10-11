@@ -38,11 +38,13 @@ Download the source.
 
 Make sure you have Node, and Bower installed. 
 
-Run `npm install` to install node dependencies
+Run `npm install` to install node dependencies.
 
 Run `bower install` to install bower packages. 
 
-To start ap cd to app home directory. 
+If bower is not installed, run `npm install -g bower`, then run `bower install.
+
+To start app cd to app home directory. 
 Run `node server.js` 
 
 Navigate to http://localhost:8080/ in your web browser.

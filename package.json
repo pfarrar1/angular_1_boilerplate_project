@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "bower": "^1.7.9",
-    "connect": "^3.4.1",
+    "connect": "^3.7.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-gzip": "^1.4.0",
@@ -23,6 +23,6 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
     "leaflet-sprite": "^1.0.0",
-    "serve-static": "^1.11.1"
+    "serve-static": "^1.14.1"
   }
 }
