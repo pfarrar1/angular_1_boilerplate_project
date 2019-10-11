@@ -1,5 +1,7 @@
 # Angular 1 Boilerplate Project
 
+#NOTE: THIS DOES NOT WORK IN NODE V12. PLEASE USE NODE V11
+
 ### About This Repo
 
 > This repo is not actively maintained, but I will continue to build out documentation and make refinements. 
