@@ -1,3 +1,5 @@
+SINCE WE ARE WELL PAST ANGUALR 1 - I will be archiving this project
+
 # Angular 1 Boilerplate Project
 
 #NOTE: THIS DOES NOT WORK IN NODE V12. PLEASE USE NODE V11
